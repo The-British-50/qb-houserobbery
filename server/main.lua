@@ -35,6 +35,7 @@ RegisterNetEvent('qb-houserobbery:server:enterHouse', function(house)
     end
     TriggerClientEvent('qb-houserobbery:client:enterHouse', src, house)
     Config.Houses[house]["opened"] = true
+    TriggerClientEvent('ak4y-battlepass:addtaskcount:standart', source, 8, 1)
 end)
 
 RegisterNetEvent('qb-houserobbery:server:searchCabin', function(cabin, house)
